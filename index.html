@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto Pokémon Slider MapaDev Week</title>
+    <link rel="shortcut icon" href="src/imagens/pokebola.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit&family=Roboto+Mono&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/responsivo.css">
+
+  </head>
+  
+  <body>
+    <header class="cabecalho">
+      <img src="src/imagens/pokebola.png" alt="pokebola" class="pokebola"/>
+      <h1 class="titulo">MapaDev Week</h1>
+    </header>
+
+    <main class="pokemon-slider">
+      <button class="btn-seta btn-voltar" id="btn-voltar">
+        <img src="src/imagens/seta.png" alt="seta voltar" />
+      </button>
+
+      <ul class="lista-pokemons">
+        <li class="cartao selecionado fundo-1">
+            <div class="informacoes">
+              <h2 class="nome">Pikachu</h2>
+              <p class="vida">HP 300</p>
+            </div>
+            <div class="container-imagem">
+              <img src="src/imagens/pikachu.png" alt="Pikachu" class="imagem-pokemon">
+            </div>
+            <div class="descricao">
+              <h3 class="titulo">Descrição</h3>
+              <p class="texto">(Japonês: ピカチュウ Pikachu) é um Pokémon do tipo Elétrico introduzido na Primeira Geração. Aquele que apresenta o fator Gigamax transforma-se quando o(a) Treinador(a) ativa seu Bracelete Dinamax..</p>
+            </div>
+        </li>
+        
+        <li class="cartao fundo-2">
+            <div class="informacoes">
+              <h2 class="nome">Charizard</h2>
+              <p class="vida">HP 800</p>
+            </div>
+            <div class="container-imagem">
+              <img src="src/imagens/charizard.png" alt="Charizard">
+            </div>
+            <div class="descricao">
+              <h3 class="titulo">Descrição</h3>
+              <p class="texto">(Japonês: リザードン Lizardon) é um Pokémon dos tipos Fogo e Voador introduzido na Primeira Geração. É a forma evoluída de Charmeleon e a forma final de Charmander.</p>
+            </div>
+        </li>
+        
+        <li class="cartao fundo-3">
+            <div class="informacoes">
+              <h2 class="nome">Mewtwo</h2>
+              <p class="vida">HP 1200</p>
+            </div>
+            <div class="container-imagem">
+              <img src="src/imagens/mewtwo.png" alt="Mewtwo">
+            </div>
+            <div class="descricao">
+              <h3 class="titulo">Descrição</h3>
+              <p class="texto">(Japonês: ミュウツー Myūtsū) é um Pokémon do tipo Psíquico introduzido na Primeira Geração. Megaevolui quando está segurando a Mewtwonite X ou a Mewtwonite Y e o(a) Treinador(a) ativa</p>
+            </div>
+        </li>
+      </ul>
+
+      <button class="btn-seta" id="btn-avancar">
+        <img src="src/imagens/seta.png" alt="seta avançar" />
+      </button>
+    </main>
+    <script src="src/js/index.js"></script>
+  </body>
+</html>
